@@ -1,0 +1,72 @@
+[
+  {
+    "id": "eval-01-au-student-visa-fee",
+    "question": "What is the current Australian student visa application fee and from which date does it apply? Cite official sources.",
+    "must_include_any": ["2,500", "2500", "A$2,500", "AU$2,500"],
+    "must_not_include": ["Southeast Asian", "dependent nations", "AU$1,600", "$1,600", "1,600 AUD"],
+    "requires_fetch": true,
+    "requires_search": true,
+    "notes": "Fee must be A$2,500 from 1 July 2026; not A$1,600 as current."
+  },
+  {
+    "id": "eval-02-de-blocked-account",
+    "question": "What is the monthly blocked account (Sperrkonto) amount required for international students in Germany in 2026?",
+    "must_include_any": ["140", "280", "9920", "11,904", "934"],
+    "requires_fetch": true,
+    "requires_search": true,
+    "notes": "Should cite primary source URLs from tool results."
+  },
+  {
+    "id": "eval-03-de-minimum-wage-not-blog",
+    "question": "What is the statutory minimum wage in Germany applicable in 2026? Only state it if a retrieved source supports it.",
+    "must_not_include": ["prodigyfinance", "confirmed by the Federal Ministry"],
+    "requires_search": true,
+    "notes": "Omit minimum wage if only blog snippets; no fake official attribution."
+  },
+  {
+    "id": "eval-04-arithmetic",
+    "question": "What is 17 + 28?",
+    "must_include_any": ["45"],
+    "must_not_include": ["http"],
+    "requires_fetch": false,
+    "requires_search": false
+  },
+  {
+    "id": "eval-05-de-news-evergreen",
+    "question": "What is the latest news about German student visa work hour rules in 2026?",
+    "must_include_any": ["140", "280", "news", "change", "No specific", "no specific"],
+    "requires_search": true,
+    "notes": "Should not present Jan 2025 portal launch as breaking news without dating."
+  },
+  {
+    "id": "eval-06-au-fetch-home-affairs",
+    "question": "According to the Australian Department of Home Affairs website, what is the base visa application charge for a Student visa (subclass 500)?",
+    "must_include_any": ["2,500", "2500"],
+    "requires_fetch": true,
+    "requires_search": true
+  },
+  {
+    "id": "eval-07-uk-graduate-route",
+    "question": "For UK Graduate route applicants from 1 January 2027 with a bachelor's degree, how long is the visa valid?",
+    "must_include_any": ["18"],
+    "requires_search": true
+  },
+  {
+    "id": "eval-08-vector-db",
+    "question": "Name two widely used open-source vector databases in 2026.",
+    "must_include_any": ["Milvus", "Qdrant", "Weaviate", "Chroma"],
+    "requires_search": true
+  },
+  {
+    "id": "eval-09-uk-maintenance",
+    "question": "Summarize only what major news sources reported about UK student visa maintenance funds in London for 2026.",
+    "must_not_include": ["Southeast Asian partner", "Pacific and Southeast"],
+    "requires_search": true
+  },
+  {
+    "id": "eval-10-claim-check-log",
+    "question": "What is 3 + 4?",
+    "must_include_any": ["7"],
+    "requires_search": false
+  }
+]

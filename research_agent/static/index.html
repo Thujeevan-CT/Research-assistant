@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Research Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <p class="eyebrow">Agent loop · search · cite</p>
+        <h1>Research Assistant</h1>
+        <p class="subtitle">
+          Ask a question. The agent searches the web, decides when it has enough,
+          and answers with sources.
+        </p>
+      </header>
+
+      <main class="card">
+        <label class="label" for="question">Your question</label>
+        <textarea
+          id="question"
+          rows="3"
+          placeholder="What are the best open-source vector databases in 2026?"
+        ></textarea>
+        <div class="actions">
+          <button type="button" id="submit" class="btn-primary">Research</button>
+          <span id="status" class="status" aria-live="polite"></span>
+        </div>
+      </main>
+
+      <section id="progress" class="panel hidden" aria-label="Research progress">
+        <h2 class="panel-title">Progress</h2>
+        <div id="progress-body" class="progress-body"></div>
+      </section>
+
+      <section id="answer-panel" class="panel hidden" aria-label="Answer">
+        <h2 class="panel-title">Answer</h2>
+        <article id="answer" class="answer"></article>
+        <p id="transcript-link" class="transcript-link hidden"></p>
+      </section>
+
+      <p id="error" class="error hidden" role="alert"></p>
+    </div>
+    <script src="/static/app.js?v=7"></script>
+  </body>
+</html>
